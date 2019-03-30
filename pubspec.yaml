@@ -29,6 +29,8 @@ dev_dependencies:
     sdk: flutter
   google_sign_in: ^3.2.4
   firebase_auth: ^0.6.6
+  firebase_core:
+  firebase_database:
   cloud_firestore :
 
 

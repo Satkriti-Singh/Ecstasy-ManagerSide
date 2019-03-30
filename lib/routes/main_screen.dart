@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:ecstasy/hello.dart';
+import 'package:ecstasy/button.dart';
 
 class MainScreen extends StatelessWidget {
   final GoogleSignInAccount googleUser;
@@ -29,11 +29,7 @@ class MainScreen extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => Hello(
-                      //googleUser: googleUser,
-                      //auth: auth,
-                      //googleSignIn: googleSignIn,
-                    )),
+                builder: (context) => ShowButtonPage()),
           );
         },
         child: Scaffold(
